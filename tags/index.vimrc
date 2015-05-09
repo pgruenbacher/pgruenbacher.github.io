@@ -19,7 +19,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="http://localhost:1313/tags/index.vimrc/" />
+<meta property="og:url" content="http://pgruenbacher.github.io/tags/index.vimrc/" />
 
 
   
@@ -31,7 +31,7 @@
   
   
 
-  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
+  <link rel="stylesheet" href="http://pgruenbacher.github.io//css/redlounge.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -41,7 +41,7 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="http://localhost:1313/tags/.vimrc/index.xml" rel="alternate" type="application/rss+xml" title="Paul Gruenbacher" />
+  <link href="http://pgruenbacher.github.io/tags/.vimrc/index.xml" rel="alternate" type="application/rss+xml" title="Paul Gruenbacher" />
 
     
   
@@ -64,12 +64,12 @@
   <div class="header">
     
 
-    <h1 class="brand-title">Gruenbacher</h1>
+    <h1 class="brand-title">Haus8</h1>
     <h2 class="brand-tagline">my public site</h2>
 
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://pgruenbacher.github.io/">Home</a></li>
         
           <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
         
@@ -111,9 +111,9 @@
       					<div class="post-categories">
 				        
       					
-					        <a class="post-category post-category-development" href="http://localhost:1313//categories/development">Development</a>
+					        <a class="post-category post-category-development" href="http://pgruenbacher.github.io//categories/development">Development</a>
       					
-					        <a class="post-category post-category-vim" href="http://localhost:1313//categories/vim">VIM</a>
+					        <a class="post-category post-category-vim" href="http://pgruenbacher.github.io//categories/vim">VIM</a>
       					
       					</div>
       				
