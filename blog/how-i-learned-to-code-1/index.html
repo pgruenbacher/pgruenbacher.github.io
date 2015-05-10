@@ -52,10 +52,6 @@
 
 
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="http://pgruenbacher.github.io//css/lightbox.css">
-  <script src="http://pgruenbacher.github.io//js/lightbox.min.js"></script>
-  
 
   
 
@@ -100,14 +96,16 @@
 				<small class="toc-label">Contents</small>
 		   	 	<nav id="TableOfContents">
 <ul>
+<li>
+<ul>
 <li><a href="#disclaimer:4d5d26a1781ca2cdb65d43b83c101af1">Disclaimer</a></li>
 <li><a href="#intro:4d5d26a1781ca2cdb65d43b83c101af1">Intro</a>
-<ul>
-<li>
 <ul>
 <li><a href="#links-to-reports-for-research:4d5d26a1781ca2cdb65d43b83c101af1">Links to reports for research</a></li>
 <li><a href="#links-to-the-posters-of-previous-research-projects:4d5d26a1781ca2cdb65d43b83c101af1">Links to the posters of previous research projects.</a></li>
 </ul></li>
+<li><a href="#javascript-apps:4d5d26a1781ca2cdb65d43b83c101af1">Javascript Apps</a></li>
+<li><a href="#golang:4d5d26a1781ca2cdb65d43b83c101af1">Golang</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -145,11 +143,11 @@
 
             
 
-<h1 id="disclaimer:4d5d26a1781ca2cdb65d43b83c101af1">Disclaimer</h1>
+<h2 id="disclaimer:4d5d26a1781ca2cdb65d43b83c101af1">Disclaimer</h2>
 
-<p>I generally dislike writing or talking about myself as I can be self-critical. This is especially true when looking back more than a year ago when I was just beginning to learn.</p>
+<p>I generally find it difficult to write about myself. This is especially true when looking back more than a year ago when I was just beginning to learn. Much of the energy that led to previous projects has been transferred onto current ones, and so I will only briefly mention or link to previous projecs. As time goes by I imagine my projects that are no longer maintained will end up being broken links as domains expire and such.</p>
 
-<h1 id="intro:4d5d26a1781ca2cdb65d43b83c101af1">Intro</h1>
+<h2 id="intro:4d5d26a1781ca2cdb65d43b83c101af1">Intro</h2>
 
 <p>My first time spent working on a web project was by first creating a <a href="http://openwetware.org/wiki/OhioMod2013:Team/Paul" title="my wiki page">wiki</a>
 that would document my laboratory experience while working at Dr. Carlos <a href="https://mae.osu.edu/people/castro.39" title="castro lab website">Castro&rsquo;s</a> lab. I find <a href="http://openwetware.org/wiki/Main_Page">openwetware</a> to be a model format for other students in scientific lab to document their research, and I&rsquo;d like to encourage all investigators to make their students write their notebooks in an online or at least digital format, which makes archiving 100x better. Although I doubt openwetware will take off, there are likely other wiki hosting formats for the scientific community.</p>
@@ -290,11 +288,48 @@ that would document my laboratory experience while working at Dr. Carlos <a href
 
 <p>I wanted to build an online portfolio that would incorporate my previous projects and art projects.</p>
 
+<hr />
+
 <p>I first started by following website and php tutorials online, with my very first tutorial series on building a dynamic website by <a href="https://www.youtube.com/channel/UCw0ZIfZiV-BORQvok_cxNPw">digicraft</a> (I am very proud that I could remember the youtube channel). My very first website from scratch using php, bootstrap, and many jquery libraries was my <a href="http://paulgruenbacher.com/bootstrap/about">first about me</a> website.</p>
 
-<p>My very first framework was <a href="http://www.codeigniter.com">code igniter</a> which was quickly replaced by <a href="laravel.com">laravel</a> by <a href="http://taylorotwell.com/">Taylor Otwell</a>. I have a fond memory of Laravel in its similarity and improvements to ruby on rails. The laravel framework was my first impression of how to implement a model view controller framework and object-relational mapping. The <a href="https://laracasts.com/">laracasts video tutorials</a> by <a href="https://twitter.com/jeffrey_way">Jeffrey Way</a> were especially useful.</p>
+<p>My very first framework was <a href="http://www.codeigniter.com">code igniter</a> which was quickly replaced by <a href="laravel.com">laravel</a> by <a href="http://taylorotwell.com/">Taylor Otwell</a>. The laravel framework was my first impression of how to implement a model view controller framework and object-relational mapping. The <a href="https://laracasts.com/">laracasts video tutorials</a> by <a href="https://twitter.com/jeffrey_way">Jeffrey Way</a> were especially useful.</p>
 
-<p>During the time I was learning the Laravel framework I was attempting to implement my first startup application: X-Press Cards. It was meant to be an online service for designing and printing cards. The laravel version was first <a href="http://paulgruenbacher.com/xcards/">x-press cards</a>. Future versions include</p>
+<p>During the time I was learning the Laravel framework I was attempting to implement my first startup application: X-Press Cards. It was meant to be an online service for designing and printing cards. The laravel version was first <a href="http://paulgruenbacher.com/xcards/">x-press cards</a>. Users would be able to upload a photo, write a message, import their addresses, and the card would then be sent from the web server to a printer. After printing the cards would be sent to respective addresses.</p>
+
+<hr />
+
+<h2 id="javascript-apps:4d5d26a1781ca2cdb65d43b83c101af1">Javascript Apps</h2>
+
+<p>The X-Press Cards website was then <a href="https://github.com/pgruenbacher/xcards4">reimplemented</a> in the <a href="https://docs.angularjs.org/guide/di">Angular</a> 1.0 JS framework. Angular and its directives first introduced me to the concept of dividing my work into discrete components for reusability. Two other angular apps built include:</p>
+
+<ul>
+<li><a href="https://game-of-life-gl.firebaseapp.com/#/app">game of life</a> which was based off of <a href="http://nullprogram.com/webgl-game-of-life/">null program&rsquo;s</a> webgl experiment. I took ~1000 existing game of life patterns and added them as a library to the game. I had meant to add navigation and an improved interface to the game for high school students to use, but it failed to garner enough interest to justify the time.</li>
+<li><a href="https://bullet.firebaseapp.com/#/intro">bullet-feed</a> which was meant to be an event/location-based messaging system using the real-time benefits of firebase and websockets. It was actually originally going to be called YakYak (until we saw YikYak had already done something similar just 11 months earlier).</li>
+<li><a href="http://www.mydrive5.com/">MyDrive5</a> built using the MEAN stack of mongoDB, Angular, node and express. Is meant to be a free website builder wich would generate money by charging a percentage from donation processing. I also began learning node.js at this time.</li>
+</ul>
+
+<p>Although I enjoyed the increased productivity with Angular and the many supporting open-source libraries, I also came to realize that Angular 1.0 has several problems
+including:</p>
+
+<ul>
+<li>Long loading time for angular app to start</li>
+<li>Constrained to the Angular way of doing things rather than learning best javascript practices.</li>
+<li>As a complex framework it does not allow for a very deep understanding of the underlying code.</li>
+<li>It does everything, which means stuck with a monolithic framework with no ability to use non-Angular libraries.</li>
+<li>The entire website can break from angular errors or missing javascript files.</li>
+<li>Poor search engine optimization</li>
+<li>Having to repeat certain logic in the front-end app and back-end api.</li>
+</ul>
+
+<p>Ultimately though the biggest reason I left Angular was because the very premise of a single page app is simply not justified in most cases. Unless a web page requires a complex interface such as google maps or gmail, it is often better to stick to a static or server-side rendering of the web page.This is why I became so excited when I discovered React and its premise of isomorphic rendering on both the client and server.</p>
+
+<p>There is a large variety of flux implementations for React, my two favorites have been the Yahoo <a href="https://github.com/yahoo/fluxible">fluxible</a> or <a href="http://acdlite.github.io/flummox">flummox</a>, both of which directly feature the isomorphic rendering. I&rsquo;ve had the quickest implementation of Fluxible which I&rsquo;ve been rebuilding the <a href="https://github.com/pgruenbacher/mydrive7">MyDrive7</a> site for.</p>
+
+<hr />
+
+<h2 id="golang:4d5d26a1781ca2cdb65d43b83c101af1">Golang</h2>
+
+<p>Probably my favorite language to have learned and to develop in has been the <a href="https://golang.org/">Go Language</a>. Much of its advantages come from its community and its opinionated way of doing things. As my first systems language, I&rsquo;ve really come to enjoy the strict typing of the compiler and the minimal dependency that the compiled static-binaries offer.</p>
 
 	
 			
@@ -305,6 +340,11 @@ that would document my laboratory experience while working at Dr. Carlos <a href
 				<div class="paging">
 					<span class="paging-label">More Reading</span>
 					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/blog/links-i-like/">Links to Stuff I Like</a>
+		            </div>
+		            
 
 					
 					<div class="paging-older">

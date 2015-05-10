@@ -6,8 +6,22 @@
     <description>Recent content on Modicum</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 May 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://pgruenbacher.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Links to Stuff I Like</title>
+      <link>http://pgruenbacher.github.io/blog/links-i-like/</link>
+      <pubDate>Sun, 10 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://pgruenbacher.github.io/blog/links-i-like/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript&#34; title=&#34;mozilla&#34;&gt;a re-introduction to javascript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kevinlondon.com/2015/05/05/code-review-best-practices.html&#34; title=&#34;kevin london&#34;&gt;code review&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.siftscience.com/blog/2015/best-practices-for-building-large-react-applications&#34; title=&#34;Alex Lopatin&#34;&gt;react best practices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>How I learned to code [part 1]</title>
@@ -17,11 +31,11 @@
       <guid>http://pgruenbacher.github.io/blog/how-i-learned-to-code-1/</guid>
       <description>
 
-&lt;h1 id=&#34;disclaimer:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;Disclaimer&lt;/h1&gt;
+&lt;h2 id=&#34;disclaimer:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;Disclaimer&lt;/h2&gt;
 
-&lt;p&gt;I generally dislike writing or talking about myself as I can be self-critical. This is especially true when looking back more than a year ago when I was just beginning to learn.&lt;/p&gt;
+&lt;p&gt;I generally find it difficult to write about myself. This is especially true when looking back more than a year ago when I was just beginning to learn. Much of the energy that led to previous projects has been transferred onto current ones, and so I will only briefly mention or link to previous projecs. As time goes by I imagine my projects that are no longer maintained will end up being broken links as domains expire and such.&lt;/p&gt;
 
-&lt;h1 id=&#34;intro:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;Intro&lt;/h1&gt;
+&lt;h2 id=&#34;intro:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;My first time spent working on a web project was by first creating a &lt;a href=&#34;http://openwetware.org/wiki/OhioMod2013:Team/Paul&#34; title=&#34;my wiki page&#34;&gt;wiki&lt;/a&gt;
 that would document my laboratory experience while working at Dr. Carlos &lt;a href=&#34;https://mae.osu.edu/people/castro.39&#34; title=&#34;castro lab website&#34;&gt;Castro&amp;rsquo;s&lt;/a&gt; lab. I find &lt;a href=&#34;http://openwetware.org/wiki/Main_Page&#34;&gt;openwetware&lt;/a&gt; to be a model format for other students in scientific lab to document their research, and I&amp;rsquo;d like to encourage all investigators to make their students write their notebooks in an online or at least digital format, which makes archiving 100x better. Although I doubt openwetware will take off, there are likely other wiki hosting formats for the scientific community.&lt;/p&gt;
@@ -162,11 +176,48 @@ that would document my laboratory experience while working at Dr. Carlos &lt;a h
 
 &lt;p&gt;I wanted to build an online portfolio that would incorporate my previous projects and art projects.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;p&gt;I first started by following website and php tutorials online, with my very first tutorial series on building a dynamic website by &lt;a href=&#34;https://www.youtube.com/channel/UCw0ZIfZiV-BORQvok_cxNPw&#34;&gt;digicraft&lt;/a&gt; (I am very proud that I could remember the youtube channel). My very first website from scratch using php, bootstrap, and many jquery libraries was my &lt;a href=&#34;http://paulgruenbacher.com/bootstrap/about&#34;&gt;first about me&lt;/a&gt; website.&lt;/p&gt;
 
-&lt;p&gt;My very first framework was &lt;a href=&#34;http://www.codeigniter.com&#34;&gt;code igniter&lt;/a&gt; which was quickly replaced by &lt;a href=&#34;laravel.com&#34;&gt;laravel&lt;/a&gt; by &lt;a href=&#34;http://taylorotwell.com/&#34;&gt;Taylor Otwell&lt;/a&gt;. I have a fond memory of Laravel in its similarity and improvements to ruby on rails. The laravel framework was my first impression of how to implement a model view controller framework and object-relational mapping. The &lt;a href=&#34;https://laracasts.com/&#34;&gt;laracasts video tutorials&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/jeffrey_way&#34;&gt;Jeffrey Way&lt;/a&gt; were especially useful.&lt;/p&gt;
+&lt;p&gt;My very first framework was &lt;a href=&#34;http://www.codeigniter.com&#34;&gt;code igniter&lt;/a&gt; which was quickly replaced by &lt;a href=&#34;laravel.com&#34;&gt;laravel&lt;/a&gt; by &lt;a href=&#34;http://taylorotwell.com/&#34;&gt;Taylor Otwell&lt;/a&gt;. The laravel framework was my first impression of how to implement a model view controller framework and object-relational mapping. The &lt;a href=&#34;https://laracasts.com/&#34;&gt;laracasts video tutorials&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/jeffrey_way&#34;&gt;Jeffrey Way&lt;/a&gt; were especially useful.&lt;/p&gt;
 
-&lt;p&gt;During the time I was learning the Laravel framework I was attempting to implement my first startup application: X-Press Cards. It was meant to be an online service for designing and printing cards. The laravel version was first &lt;a href=&#34;http://paulgruenbacher.com/xcards/&#34;&gt;x-press cards&lt;/a&gt;. Future versions include&lt;/p&gt;
+&lt;p&gt;During the time I was learning the Laravel framework I was attempting to implement my first startup application: X-Press Cards. It was meant to be an online service for designing and printing cards. The laravel version was first &lt;a href=&#34;http://paulgruenbacher.com/xcards/&#34;&gt;x-press cards&lt;/a&gt;. Users would be able to upload a photo, write a message, import their addresses, and the card would then be sent from the web server to a printer. After printing the cards would be sent to respective addresses.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;javascript-apps:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;Javascript Apps&lt;/h2&gt;
+
+&lt;p&gt;The X-Press Cards website was then &lt;a href=&#34;https://github.com/pgruenbacher/xcards4&#34;&gt;reimplemented&lt;/a&gt; in the &lt;a href=&#34;https://docs.angularjs.org/guide/di&#34;&gt;Angular&lt;/a&gt; 1.0 JS framework. Angular and its directives first introduced me to the concept of dividing my work into discrete components for reusability. Two other angular apps built include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://game-of-life-gl.firebaseapp.com/#/app&#34;&gt;game of life&lt;/a&gt; which was based off of &lt;a href=&#34;http://nullprogram.com/webgl-game-of-life/&#34;&gt;null program&amp;rsquo;s&lt;/a&gt; webgl experiment. I took ~1000 existing game of life patterns and added them as a library to the game. I had meant to add navigation and an improved interface to the game for high school students to use, but it failed to garner enough interest to justify the time.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bullet.firebaseapp.com/#/intro&#34;&gt;bullet-feed&lt;/a&gt; which was meant to be an event/location-based messaging system using the real-time benefits of firebase and websockets. It was actually originally going to be called YakYak (until we saw YikYak had already done something similar just 11 months earlier).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mydrive5.com/&#34;&gt;MyDrive5&lt;/a&gt; built using the MEAN stack of mongoDB, Angular, node and express. Is meant to be a free website builder wich would generate money by charging a percentage from donation processing. I also began learning node.js at this time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Although I enjoyed the increased productivity with Angular and the many supporting open-source libraries, I also came to realize that Angular 1.0 has several problems
+including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Long loading time for angular app to start&lt;/li&gt;
+&lt;li&gt;Constrained to the Angular way of doing things rather than learning best javascript practices.&lt;/li&gt;
+&lt;li&gt;As a complex framework it does not allow for a very deep understanding of the underlying code.&lt;/li&gt;
+&lt;li&gt;It does everything, which means stuck with a monolithic framework with no ability to use non-Angular libraries.&lt;/li&gt;
+&lt;li&gt;The entire website can break from angular errors or missing javascript files.&lt;/li&gt;
+&lt;li&gt;Poor search engine optimization&lt;/li&gt;
+&lt;li&gt;Having to repeat certain logic in the front-end app and back-end api.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ultimately though the biggest reason I left Angular was because the very premise of a single page app is simply not justified in most cases. Unless a web page requires a complex interface such as google maps or gmail, it is often better to stick to a static or server-side rendering of the web page.This is why I became so excited when I discovered React and its premise of isomorphic rendering on both the client and server.&lt;/p&gt;
+
+&lt;p&gt;There is a large variety of flux implementations for React, my two favorites have been the Yahoo &lt;a href=&#34;https://github.com/yahoo/fluxible&#34;&gt;fluxible&lt;/a&gt; or &lt;a href=&#34;http://acdlite.github.io/flummox&#34;&gt;flummox&lt;/a&gt;, both of which directly feature the isomorphic rendering. I&amp;rsquo;ve had the quickest implementation of Fluxible which I&amp;rsquo;ve been rebuilding the &lt;a href=&#34;https://github.com/pgruenbacher/mydrive7&#34;&gt;MyDrive7&lt;/a&gt; site for.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;golang:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;Golang&lt;/h2&gt;
+
+&lt;p&gt;Probably my favorite language to have learned and to develop in has been the &lt;a href=&#34;https://golang.org/&#34;&gt;Go Language&lt;/a&gt;. Much of its advantages come from its community and its opinionated way of doing things. As my first systems language, I&amp;rsquo;ve really come to enjoy the strict typing of the compiler and the minimal dependency that the compiled static-binaries offer.&lt;/p&gt;
 </description>
     </item>
     
