@@ -2,20 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vim on Paul Gruenbacher</title>
-    <link>http://pgruenbacher.github.io/tags/vim/</link>
+    <link>http://localhost:1313/tags/vim/</link>
     <description>Recent content in Vim on Paul Gruenbacher</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 06 Apr 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://pgruenbacher.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>spf13-vim 3.0 release and new website</title>
-      <link>http://pgruenbacher.github.io/posts/spf13-vim-3-0-release-and-new-website/</link>
+      <link>http://localhost:1313/blog/spf13-vim-3-0-release-and-new-website/</link>
       <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://pgruenbacher.github.io/posts/spf13-vim-3-0-release-and-new-website/</guid>
-      <description>&lt;p&gt;#How I learned to code pt 1.&lt;/p&gt;
+      <guid>http://localhost:1313/blog/spf13-vim-3-0-release-and-new-website/</guid>
+      <description>
+
+&lt;h1 id=&#34;how-i-learned-to-code-pt-1:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;How I learned to code pt 1.&lt;/h1&gt;
+
+&lt;p&gt;More text&lt;/p&gt;
+
+&lt;h1 id=&#34;this-is-an-h1:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;This is an H1&lt;/h1&gt;
+
+&lt;p&gt;Underlined?&lt;/p&gt;
+
+&lt;h2 id=&#34;this-is-an-h2:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;This is an H2&lt;/h2&gt;
+
+&lt;p&gt;Hopefully&lt;/p&gt;
 </description>
     </item>
     

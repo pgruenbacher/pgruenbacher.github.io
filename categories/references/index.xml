@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Modicum</title>
-    <link>http://pgruenbacher.github.io/</link>
-    <description>Recent content on Modicum</description>
+    <title>References on Modicum</title>
+    <link>http://pgruenbacher.github.io/categories/references/</link>
+    <description>Recent content in References on Modicum</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 08 May 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://pgruenbacher.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://pgruenbacher.github.io/categories/references/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My Markdown References</title>
@@ -187,28 +187,6 @@ Can also link to parts of page using a link tag
 
 &lt;p&gt;&lt;img src=&#34;http://pgruenbacher.github.io/images/sample.png&#34; alt=&#34;Alt text&#34; title=&#34;Image attribute&#34; /&gt;
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How I learned to code [part 1]</title>
-      <link>http://pgruenbacher.github.io/blog/how-i-learned-to-code-1/</link>
-      <pubDate>Fri, 08 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://pgruenbacher.github.io/blog/how-i-learned-to-code-1/</guid>
-      <description>
-
-&lt;h1 id=&#34;how-i-learned-to-code-pt-1:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;How I learned to code pt 1.&lt;/h1&gt;
-
-&lt;p&gt;More text&lt;/p&gt;
-
-&lt;h1 id=&#34;this-is-an-h1:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;This is an H1&lt;/h1&gt;
-
-&lt;p&gt;Underlined?&lt;/p&gt;
-
-&lt;h2 id=&#34;this-is-an-h2:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;This is an H2&lt;/h2&gt;
-
-&lt;p&gt;Hopefully&lt;/p&gt;
 </description>
     </item>
     
