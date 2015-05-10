@@ -10,6 +10,167 @@
     <atom:link href="http://pgruenbacher.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>How I learned to code [part 1]</title>
+      <link>http://pgruenbacher.github.io/blog/how-i-learned-to-code-1/</link>
+      <pubDate>Fri, 08 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://pgruenbacher.github.io/blog/how-i-learned-to-code-1/</guid>
+      <description>
+
+&lt;h1 id=&#34;disclaimer:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;Disclaimer&lt;/h1&gt;
+
+&lt;p&gt;I generally dislike writing or talking about myself as I can be self-critical. This is especially true when looking back more than a year ago when I was just beginning to learn.&lt;/p&gt;
+
+&lt;h1 id=&#34;intro:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;Intro&lt;/h1&gt;
+
+&lt;p&gt;My first time spent working on a web project was by first creating a &lt;a href=&#34;http://openwetware.org/wiki/OhioMod2013:Team/Paul&#34; title=&#34;my wiki page&#34;&gt;wiki&lt;/a&gt;
+that would document my laboratory experience while working at Dr. Carlos &lt;a href=&#34;https://mae.osu.edu/people/castro.39&#34; title=&#34;castro lab website&#34;&gt;Castro&amp;rsquo;s&lt;/a&gt; lab. I find &lt;a href=&#34;http://openwetware.org/wiki/Main_Page&#34;&gt;openwetware&lt;/a&gt; to be a model format for other students in scientific lab to document their research, and I&amp;rsquo;d like to encourage all investigators to make their students write their notebooks in an online or at least digital format, which makes archiving 100x better. Although I doubt openwetware will take off, there are likely other wiki hosting formats for the scientific community.&lt;/p&gt;
+
+&lt;p&gt;I later then did the design for the 2013 Ohio Mod team&amp;rsquo;s &lt;a href=&#34;http://openwetware.org/wiki/Biomod/2013/OSU&#34;&gt;website&lt;/a&gt; (slightly broken).This was primarily an exercise in Adobe Illustrator as pages are in fact a gif format with sliced links.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I came to quickly enjoy for making other designs for scientific figures, documents, and posters.&lt;/p&gt;
+
+&lt;h3 id=&#34;links-to-reports-for-research:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;Links to reports for research&lt;/h3&gt;
+
+&lt;p&gt;
+&lt;figure 
+    &gt;
+    
+        &lt;a href=&#34;http://pgruenbacher.github.io/documents/maeslantkering.pdf&#34;&gt;
+    
+        &lt;img src=&#34;http://pgruenbacher.github.io/images/maeslantkering-thumbnail.gif&#34; 
+        
+            alt=&#34;made purely for fun&#34;
+         /&gt;
+    
+        &lt;/a&gt;
+    
+    
+        &lt;figcaption&gt;
+            
+                &lt;span&gt;&lt;strong&gt;Rotterdam sea gate graphic&lt;/strong&gt;&lt;/span&gt;&lt;/br&gt;
+            
+            
+                &lt;span&gt;
+                made purely for fun
+                
+                
+            
+            &lt;/span&gt; 
+        
+        &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure 
+    &gt;
+    
+        &lt;a href=&#34;http://pgruenbacher.github.io/documents/fuel_cell.pdf&#34;&gt;
+    
+        &lt;img src=&#34;http://pgruenbacher.github.io/images/fuelcells-thumbnail.gif&#34; 
+        
+            alt=&#34;made as an application for nextech materials internship as well as for scholarship&#34;
+         /&gt;
+    
+        &lt;/a&gt;
+    
+    
+        &lt;figcaption&gt;
+            
+                &lt;span&gt;&lt;strong&gt;Fuel Cell Report 2014&lt;/strong&gt;&lt;/span&gt;&lt;/br&gt;
+            
+            
+                &lt;span&gt;
+                made as an application for nextech materials internship as well as for scholarship
+                
+                
+            
+            &lt;/span&gt; 
+        
+        &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;links-to-the-posters-of-previous-research-projects:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;Links to the posters of previous research projects.&lt;/h3&gt;
+
+&lt;p&gt;
+&lt;figure 
+    &gt;
+    
+        &lt;a href=&#34;http://pgruenbacher.github.io/images/Gruenbacher-poster_3-31-2011final.pdf&#34;&gt;
+    
+        &lt;img src=&#34;http://pgruenbacher.github.io/images/Gruenbacher-poster-3-31-2011final_thumb.gif&#34; 
+        
+            alt=&#34;poster used at the Denman event&#34;
+         /&gt;
+    
+        &lt;/a&gt;
+    
+    
+        &lt;figcaption&gt;
+            
+                &lt;span&gt;&lt;strong&gt;Nishikawara Report May 2011&lt;/strong&gt;&lt;/span&gt;&lt;/br&gt;
+            
+            
+                &lt;span&gt;
+                poster used at the Denman event
+                
+                
+            
+            &lt;/span&gt; 
+        
+        &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure 
+    &gt;
+    
+        &lt;a href=&#34;http://pgruenbacher.github.io/images/Denman_May2012_Gruenbacher_Poster_May1.pdf&#34;&gt;
+    
+        &lt;img src=&#34;http://pgruenbacher.github.io/images/Gruenbacher-poster-3-31-2011final_thumb.gif&#34; 
+        
+            alt=&#34;poster used at the Denman event&#34;
+         /&gt;
+    
+        &lt;/a&gt;
+    
+    
+        &lt;figcaption&gt;
+            
+                &lt;span&gt;&lt;strong&gt;Pelotonia Report May 2012&lt;/strong&gt;&lt;/span&gt;&lt;/br&gt;
+            
+            
+                &lt;span&gt;
+                poster used at the Denman event
+                
+                
+            
+            &lt;/span&gt; 
+        
+        &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I wanted to build an online portfolio that would incorporate my previous projects and art projects.&lt;/p&gt;
+
+&lt;p&gt;I first started by following website and php tutorials online, with my very first tutorial series on building a dynamic website by &lt;a href=&#34;https://www.youtube.com/channel/UCw0ZIfZiV-BORQvok_cxNPw&#34;&gt;digicraft&lt;/a&gt; (I am very proud that I could remember the youtube channel). My very first website from scratch using php, bootstrap, and many jquery libraries was my &lt;a href=&#34;http://paulgruenbacher.com/bootstrap/about&#34;&gt;first about me&lt;/a&gt; website.&lt;/p&gt;
+
+&lt;p&gt;My very first framework was &lt;a href=&#34;http://www.codeigniter.com&#34;&gt;code igniter&lt;/a&gt; which was quickly replaced by &lt;a href=&#34;laravel.com&#34;&gt;laravel&lt;/a&gt; by &lt;a href=&#34;http://taylorotwell.com/&#34;&gt;Taylor Otwell&lt;/a&gt;. I have a fond memory of Laravel in its similarity and improvements to ruby on rails. The laravel framework was my first impression of how to implement a model view controller framework and object-relational mapping. The &lt;a href=&#34;https://laracasts.com/&#34;&gt;laracasts video tutorials&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/jeffrey_way&#34;&gt;Jeffrey Way&lt;/a&gt; were especially useful.&lt;/p&gt;
+
+&lt;p&gt;During the time I was learning the Laravel framework I was attempting to implement my first startup application: X-Press Cards. It was meant to be an online service for designing and printing cards. The laravel version was first &lt;a href=&#34;http://paulgruenbacher.com/xcards/&#34;&gt;x-press cards&lt;/a&gt;. Future versions include&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>My Markdown References</title>
       <link>http://pgruenbacher.github.io/blog/markdown-references/</link>
       <pubDate>Fri, 08 May 2015 00:00:00 +0000</pubDate>
@@ -187,28 +348,6 @@ Can also link to parts of page using a link tag
 
 &lt;p&gt;&lt;img src=&#34;http://pgruenbacher.github.io/images/sample.png&#34; alt=&#34;Alt text&#34; title=&#34;Image attribute&#34; /&gt;
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How I learned to code [part 1]</title>
-      <link>http://pgruenbacher.github.io/blog/how-i-learned-to-code-1/</link>
-      <pubDate>Fri, 08 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://pgruenbacher.github.io/blog/how-i-learned-to-code-1/</guid>
-      <description>
-
-&lt;h1 id=&#34;how-i-learned-to-code-pt-1:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;How I learned to code pt 1.&lt;/h1&gt;
-
-&lt;p&gt;More text&lt;/p&gt;
-
-&lt;h1 id=&#34;this-is-an-h1:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;This is an H1&lt;/h1&gt;
-
-&lt;p&gt;Underlined?&lt;/p&gt;
-
-&lt;h2 id=&#34;this-is-an-h2:4d5d26a1781ca2cdb65d43b83c101af1&#34;&gt;This is an H2&lt;/h2&gt;
-
-&lt;p&gt;Hopefully&lt;/p&gt;
 </description>
     </item>
     

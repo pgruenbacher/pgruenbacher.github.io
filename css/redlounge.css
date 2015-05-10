@@ -60,15 +60,6 @@ blockquote em{
 
 
 
-/* Overflow Styling for Code blocks */
-pre{
-  overflow: auto;
-}
-
-
-
-
-
 
 * {
     -webkit-box-sizing: border-box;
