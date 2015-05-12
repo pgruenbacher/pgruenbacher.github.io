@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    linux_tips // Modicum
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+  <meta property="og:title" content="linux_tips" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://pgruenbacher.github.io/blog/linux_tips/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://pgruenbacher.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Modicum" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Modicum</h1>
+    <h2 class="brand-tagline">Posts by Paul Gruenbacher</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://pgruenbacher.github.io/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+      </ul>
+    </nav>
+
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#filters:9b6aab0ac9684b90711607abb7cd4f30">Filters</a></li>
+<li><a href="#relational-operators:9b6aab0ac9684b90711607abb7cd4f30">Relational Operators</a></li>
+<li><a href="#for-loops:9b6aab0ac9684b90711607abb7cd4f30">For Loops</a></li>
+<li><a href="#brace-expansion:9b6aab0ac9684b90711607abb7cd4f30">Brace Expansion</a></li>
+<li><a href="#redirection:9b6aab0ac9684b90711607abb7cd4f30">Redirection</a></li>
+<li><a href="#references:9b6aab0ac9684b90711607abb7cd4f30">References</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/linux_tips/">linux_tips</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>11</sup></span><span class="post-date-separator">/</span><span class="post-date-month">May</span> <span class="post-date-year">2015</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-development" href="http://pgruenbacher.github.io//categories/development">Development</a>
+				
+					<a class="post-category post-category-linux" href="http://pgruenbacher.github.io//categories/linux">Linux</a>
+				
+				</div>
+			
+
+			
+
+			
+
+            
+
+<h3 id="filters:9b6aab0ac9684b90711607abb7cd4f30">Filters</h3>
+
+<ul>
+<li><strong>tail +20 &lt; hotel.txt | head -n30 &gt;hlist</strong> takes lines 20 and is filtered  by head to 30 from hotel.txt and ouputs to hlist file.</li>
+<li><strong>sort &lt; sname | uniq &gt; u_sname</strong> sorts the lines of sname file, and is filtered by uniq command.</li>
+</ul>
+
+<h3 id="relational-operators:9b6aab0ac9684b90711607abb7cd4f30">Relational Operators</h3>
+
+<ul>
+<li><strong>10 -eq 10</strong>: a is <strong>equal</strong> to b</li>
+<li><strong>10 -ne 20</strong>: a is <strong>not equal</strong> to b</li>
+<li><strong>10 -gt 20</strong>: a is not <strong>greater</strong> than b</li>
+<li><strong>10 -lt 20</strong>: a is <strong>less</strong> than b</li>
+<li><strong>10 -ge 20</strong>: a is not <strong>greater or equal</strong> to b</li>
+<li><strong>10 -le 20</strong>: a is <strong>less or equal</strong> to b</li>
+</ul>
+
+<h3 id="for-loops:9b6aab0ac9684b90711607abb7cd4f30">For Loops</h3>
+
+<pre><code>for ((  i = 0 ;  i &lt;= 5;  i++  ))
+
+for (( expr1; expr2; expr3 ))
+do
+   ### each expression will be evaluated ###  
+Done
+
+for (( i = 1; i &lt;= 5; i++ ))      ### Outer for loop ###
+do
+    for (( j = 1 ; j &lt;= 5; j++ )) ### Inner for loop ###
+    do
+          echo -n &quot;$i &quot;
+    done
+  echo &quot;&quot; #### print the new line ###
+done
+</code></pre>
+
+<h3 id="brace-expansion:9b6aab0ac9684b90711607abb7cd4f30">Brace Expansion</h3>
+
+<pre><code>{a,b}$PATH  # is a$PATH b$PATH
+_{I,want,my,money,back} # is _I _want _my _money _back
+
+$ echo {5..12} # brace expansion
+5 6 7 8 9 10 11 12
+$ echo {5..k} # cannot mix types
+{5..k}
+$ echo {01..10} # zeropad, range is zeropadded as well
+01 02 03 04 05 06 07 08 09 10
+$ echo {{A..C},{a..c}} #also follows alphater 
+A B C a b c
+</code></pre>
+
+<h3 id="redirection:9b6aab0ac9684b90711607abb7cd4f30">Redirection</h3>
+
+<table>
+<thead>
+<tr>
+<th>Standard File</th>
+<th>Descriptor Number</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>stdin</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>stdout</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>stderr</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code>$ rm bad_file_name111 &gt; err.txt #prints the error on screen
+$ rm bad_file_name111 2&gt;err.txt #redirects stderr output to the err.txt
+
+#edit ./demoscr
+echo &quot;Error&quot; 1&gt;&amp;2 #prints message as stderr
+cd nonexistent 2&gt;&amp;1 #redirects stderr of command to stdout
+1&gt;filename # Redirect stdout to file &quot;filename.&quot;
+1&gt;&gt;filename # Redirect and append stdout to file &quot;filename.&quot;
+2&gt;filename # Redirect stderr to file &quot;filename.&quot;
+2&gt;&gt;filename # Redirect and append stderr to file &quot;filename.&quot;
+&amp;&gt;filename # Redirect both stdout and stderr to file &quot;filename.&quot;
+
+$ ./demoscr &gt; er1   
+</code></pre>
+
+<h3 id="references:9b6aab0ac9684b90711607abb7cd4f30">References</h3>
+
+<p><a href="http://www.tldp.org/LDP/abs/html/io-redirection.html">tlp</a></p>
+
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-development" href="http://pgruenbacher.github.io//tags/development">Development</a>,
+	                
+	                <a class="post-tag post-tag-linux" href="http://pgruenbacher.github.io//tags/linux">linux</a>,
+	                
+	                <a class="post-tag post-tag-tips" href="http://pgruenbacher.github.io//tags/tips">tips</a>,
+	                
+	                <a class="post-tag post-tag-tutorial" href="http://pgruenbacher.github.io//tags/tutorial">tutorial</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/links-i-like/">Links to Stuff I Like</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2015. All rights reserved. </p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

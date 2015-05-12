@@ -6,8 +6,117 @@
     <description>Recent content on Modicum</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2015 20:53:46 -0400</lastBuildDate>
     <atom:link href="http://pgruenbacher.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>linux_tips</title>
+      <link>http://pgruenbacher.github.io/blog/linux_tips/</link>
+      <pubDate>Mon, 11 May 2015 20:53:46 -0400</pubDate>
+      
+      <guid>http://pgruenbacher.github.io/blog/linux_tips/</guid>
+      <description>
+
+&lt;h3 id=&#34;filters:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;Filters&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;tail +20 &amp;lt; hotel.txt | head -n30 &amp;gt;hlist&lt;/strong&gt; takes lines 20 and is filtered  by head to 30 from hotel.txt and ouputs to hlist file.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;sort &amp;lt; sname | uniq &amp;gt; u_sname&lt;/strong&gt; sorts the lines of sname file, and is filtered by uniq command.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;relational-operators:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;Relational Operators&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;10 -eq 10&lt;/strong&gt;: a is &lt;strong&gt;equal&lt;/strong&gt; to b&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10 -ne 20&lt;/strong&gt;: a is &lt;strong&gt;not equal&lt;/strong&gt; to b&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10 -gt 20&lt;/strong&gt;: a is not &lt;strong&gt;greater&lt;/strong&gt; than b&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10 -lt 20&lt;/strong&gt;: a is &lt;strong&gt;less&lt;/strong&gt; than b&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10 -ge 20&lt;/strong&gt;: a is not &lt;strong&gt;greater or equal&lt;/strong&gt; to b&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10 -le 20&lt;/strong&gt;: a is &lt;strong&gt;less or equal&lt;/strong&gt; to b&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;for-loops:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;For Loops&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;for ((  i = 0 ;  i &amp;lt;= 5;  i++  ))
+
+for (( expr1; expr2; expr3 ))
+do
+   ### each expression will be evaluated ###  
+Done
+
+for (( i = 1; i &amp;lt;= 5; i++ ))      ### Outer for loop ###
+do
+    for (( j = 1 ; j &amp;lt;= 5; j++ )) ### Inner for loop ###
+    do
+          echo -n &amp;quot;$i &amp;quot;
+    done
+  echo &amp;quot;&amp;quot; #### print the new line ###
+done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;brace-expansion:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;Brace Expansion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;{a,b}$PATH  # is a$PATH b$PATH
+_{I,want,my,money,back} # is _I _want _my _money _back
+
+$ echo {5..12} # brace expansion
+5 6 7 8 9 10 11 12
+$ echo {5..k} # cannot mix types
+{5..k}
+$ echo {01..10} # zeropad, range is zeropadded as well
+01 02 03 04 05 06 07 08 09 10
+$ echo {{A..C},{a..c}} #also follows alphater 
+A B C a b c
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;redirection:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;Redirection&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Standard File&lt;/th&gt;
+&lt;th&gt;Descriptor Number&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;stdin&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;stdout&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;stderr&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;pre&gt;&lt;code&gt;$ rm bad_file_name111 &amp;gt; err.txt #prints the error on screen
+$ rm bad_file_name111 2&amp;gt;err.txt #redirects stderr output to the err.txt
+
+#edit ./demoscr
+echo &amp;quot;Error&amp;quot; 1&amp;gt;&amp;amp;2 #prints message as stderr
+cd nonexistent 2&amp;gt;&amp;amp;1 #redirects stderr of command to stdout
+1&amp;gt;filename # Redirect stdout to file &amp;quot;filename.&amp;quot;
+1&amp;gt;&amp;gt;filename # Redirect and append stdout to file &amp;quot;filename.&amp;quot;
+2&amp;gt;filename # Redirect stderr to file &amp;quot;filename.&amp;quot;
+2&amp;gt;&amp;gt;filename # Redirect and append stderr to file &amp;quot;filename.&amp;quot;
+&amp;amp;&amp;gt;filename # Redirect both stdout and stderr to file &amp;quot;filename.&amp;quot;
+
+$ ./demoscr &amp;gt; er1   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;references:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;References&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.tldp.org/LDP/abs/html/io-redirection.html&#34;&gt;tlp&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Links to Stuff I Like</title>
@@ -19,7 +128,195 @@
 &lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript&#34; title=&#34;mozilla&#34;&gt;a re-introduction to javascript&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://kevinlondon.com/2015/05/05/code-review-best-practices.html&#34; title=&#34;kevin london&#34;&gt;code review&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.siftscience.com/blog/2015/best-practices-for-building-large-react-applications&#34; title=&#34;Alex Lopatin&#34;&gt;react best practices&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.golang.org/pipelines&#34; title=&#34;Golang&#34;&gt;golang pipelines&lt;/a&gt;
+Git&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://maryrosecook.com/blog/post/git-in-six-hundred-words&#34; title=&#34;mary rose cook&#34;&gt;git in 600 words&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://tom.preston-werner.com/2009/05/19/the-git-parable.html&#34; title=&#34;tom presten werner&#34;&gt;the git parable&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Markdown References</title>
+      <link>http://pgruenbacher.github.io/blog/markdown-references/</link>
+      <pubDate>Fri, 08 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://pgruenbacher.github.io/blog/markdown-references/</guid>
+      <description>
+
+&lt;p&gt;Table of Contents&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#intro&#34;&gt;intro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#references&#34;&gt;references&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#linking&#34;&gt;linking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#images&#34;&gt;images&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a name=&#34;intro&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;intro:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;This blog uses markdown for content generation. Therefore this post was written in order to provide a quick self-reference for markdown generation.
+Much is copied from &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;daringfireball&lt;/a&gt;, adam&amp;rsquo;s &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;cheatsheset&lt;/a&gt;, and from &lt;a href=&#34;http://en.wikipedia.org/wiki/Markdown&#34;&gt;wikipedia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Current tools I use are &lt;a href=&#34;https://github.com/SublimeText-Markdown/MarkdownEditing&#34;&gt;sublime-markdown-editing&lt;/a&gt;. I set the colorscheme dark by going to sublime -&amp;gt; preferences -&amp;gt; settings-More -&amp;gt; syntax specific-User and edited the file to have the configuration:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+    &amp;quot;color_scheme&amp;quot;: &amp;quot;Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a name=&#34;references&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;references:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;Hugo is slightly trickier than other markdown interpreters&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;For tables I simply use html tags. Unfortunately markdown isn&amp;rsquo;t processed within html tags. The pipelines alternative isn&amp;rsquo;t very appealing at all.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
+    &amp;lt;thead&amp;gt;
+        &amp;lt;th&amp;gt;Markdown&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;Output&amp;lt;/th&amp;gt;
+    &amp;lt;/thead&amp;gt;
+    &amp;lt;tbody&amp;gt;
+        &amp;lt;tr&amp;gt;
+            &amp;lt;td&amp;gt;Example Markdown&amp;lt;/td&amp;gt;
+            &amp;lt;td&amp;gt;Example Ouput&amp;lt;/td&amp;gt;
+        &amp;lt;/tr&amp;gt;
+    &amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;table&gt;
+    &lt;thead&gt;
+        &lt;th&gt;Markdown&lt;/th&gt;
+        &lt;th&gt;Output&lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Example Markdown&lt;/td&gt;
+            &lt;td&gt;Example Ouput&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;# Heading 
+## Sub-heading 
+### Another deeper heading
+ 
+*italic*, **bold**, `monospace`, ~~strikethrough~~ .
+ 
+A [link](http://example.com)
+
+Dot list:
+
+  * apples
+  * oranges
+ 
+Numbered list:
+
+  1. apples
+  2. oranges
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;heading:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Heading&lt;/h1&gt;
+
+&lt;h2 id=&#34;sub-heading:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Sub-heading&lt;/h2&gt;
+
+&lt;h3 id=&#34;another-deeper-heading:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Another deeper heading&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;italic&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, &lt;code&gt;monospace&lt;/code&gt;, &lt;del&gt;strikethrough&lt;/del&gt; .&lt;/p&gt;
+
+&lt;p&gt;A &lt;a href=&#34;http://example.com&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Dot list:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;apples&lt;/li&gt;
+&lt;li&gt;oranges&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Numbered list:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;apples&lt;/li&gt;
+&lt;li&gt;oranges&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; This is the first level of quoting.
+&amp;gt;
+&amp;gt; &amp;gt; This is nested blockquote.
+&amp;gt;
+&amp;gt; Back to the first level.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is the first level of quoting.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is nested blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Back to the first level.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a name=&#34;linking&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;linking:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Linking&lt;/h2&gt;
+
+&lt;p&gt;Useful for saving your links in a section of the markdown as references&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;I get 10 times more traffic from [Google] [1] than from
+[Yahoo] [2] or (implicit link)-&amp;gt; [MSN] [].
+  `[1]: http://google.com/        &amp;quot;Google&amp;quot;`
+  `[2]: http://search.yahoo.com/  &amp;quot;Yahoo Search&amp;quot;`
+  `[MSN]: http://search.msn.com/    &amp;quot;MSN Search&amp;quot;`
+
+&amp;lt;http://example.com/&amp;gt;
+&amp;lt;address@example.com&amp;gt;
+Can also link to parts of page using a link tag
+[link to header](#headerId)
+
+### Some Header
+&amp;lt;a name=&amp;quot;headerId&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I get 10 times more traffic from &lt;a href=&#34;http://google.com/&#34; title=&#34;Google&#34;&gt;Google&lt;/a&gt; than from
+&lt;a href=&#34;http://search.yahoo.com/&#34; title=&#34;Yahoo Search&#34;&gt;Yahoo&lt;/a&gt; or (implicit link)-&amp;gt; &lt;a href=&#34;http://search.msn.com/&#34; title=&#34;MSN Search&#34;&gt;MSN&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://example.com/&#34;&gt;http://example.com/&lt;/a&gt;
+&lt;a href=&#34;mailto:address@example.com&#34;&gt;address@example.com&lt;/a&gt;
+Can also link to parts of page using a link tag
+&lt;a href=&#34;#headerId&#34;&gt;link to header&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;headerId&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;some-header:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Some Header&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a name=&#34;images&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;images:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Images&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;![Alt text][imageId]
+
+`[imageId]: /images/sample.png  &amp;quot;Image attribute&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pgruenbacher.github.io/images/sample.png&#34; alt=&#34;Alt text&#34; title=&#34;Image attribute&#34; /&gt;
+&lt;/p&gt;
 </description>
     </item>
     
@@ -222,183 +519,20 @@ including:&lt;/p&gt;
     </item>
     
     <item>
-      <title>My Markdown References</title>
-      <link>http://pgruenbacher.github.io/blog/markdown-references/</link>
-      <pubDate>Fri, 08 May 2015 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>http://pgruenbacher.github.io/blog/centOS_configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pgruenbacher.github.io/blog/markdown-references/</guid>
+      <guid>http://pgruenbacher.github.io/blog/centOS_configuration/</guid>
       <description>
 
-&lt;p&gt;Table of Contents&lt;/p&gt;
+&lt;h3 id=&#34;run-a-terminal-shortcut:eff9c853dfef7b578b52585edd5f37d6&#34;&gt;Run a terminal shortcut&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#intro&#34;&gt;intro&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#references&#34;&gt;references&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#linking&#34;&gt;linking&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#images&#34;&gt;images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go to System -&amp;gt; Preferences -&amp;gt; Keyboard Shortcuts&lt;/li&gt;
+&lt;li&gt;Double click run a terminal action&lt;/li&gt;
+&lt;li&gt;set to &lt;control&gt;&lt;alt&gt;t&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;a name=&#34;intro&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;intro:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Intro&lt;/h2&gt;
-
-&lt;p&gt;This blog uses markdown for content generation. Therefore this post was written in order to provide a quick self-reference for markdown generation.
-Much is copied from &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;daringfireball&lt;/a&gt;, adam&amp;rsquo;s &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;cheatsheset&lt;/a&gt;, and from &lt;a href=&#34;http://en.wikipedia.org/wiki/Markdown&#34;&gt;wikipedia&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Current tools I use are &lt;a href=&#34;https://github.com/SublimeText-Markdown/MarkdownEditing&#34;&gt;sublime-markdown-editing&lt;/a&gt;. I set the colorscheme dark by going to sublime -&amp;gt; preferences -&amp;gt; settings-More -&amp;gt; syntax specific-User and edited the file to have the configuration:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-    &amp;quot;color_scheme&amp;quot;: &amp;quot;Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme&amp;quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a name=&#34;references&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;references:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;References&lt;/h2&gt;
-
-&lt;p&gt;Hugo is slightly trickier than other markdown interpreters&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;For tables I simply use html tags. Unfortunately markdown isn&amp;rsquo;t processed within html tags. The pipelines alternative isn&amp;rsquo;t very appealing at all.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
-    &amp;lt;thead&amp;gt;
-        &amp;lt;th&amp;gt;Markdown&amp;lt;/th&amp;gt;
-        &amp;lt;th&amp;gt;Output&amp;lt;/th&amp;gt;
-    &amp;lt;/thead&amp;gt;
-    &amp;lt;tbody&amp;gt;
-        &amp;lt;tr&amp;gt;
-            &amp;lt;td&amp;gt;Example Markdown&amp;lt;/td&amp;gt;
-            &amp;lt;td&amp;gt;Example Ouput&amp;lt;/td&amp;gt;
-        &amp;lt;/tr&amp;gt;
-    &amp;lt;/tbody&amp;gt;
-&amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;table&gt;
-    &lt;thead&gt;
-        &lt;th&gt;Markdown&lt;/th&gt;
-        &lt;th&gt;Output&lt;/th&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Example Markdown&lt;/td&gt;
-            &lt;td&gt;Example Ouput&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code&gt;# Heading 
-## Sub-heading 
-### Another deeper heading
- 
-*italic*, **bold**, `monospace`, ~~strikethrough~~ .
- 
-A [link](http://example.com)
-
-Dot list:
-
-  * apples
-  * oranges
- 
-Numbered list:
-
-  1. apples
-  2. oranges
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;heading:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Heading&lt;/h1&gt;
-
-&lt;h2 id=&#34;sub-heading:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Sub-heading&lt;/h2&gt;
-
-&lt;h3 id=&#34;another-deeper-heading:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Another deeper heading&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;italic&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, &lt;code&gt;monospace&lt;/code&gt;, &lt;del&gt;strikethrough&lt;/del&gt; .&lt;/p&gt;
-
-&lt;p&gt;A &lt;a href=&#34;http://example.com&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Dot list:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;apples&lt;/li&gt;
-&lt;li&gt;oranges&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Numbered list:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;apples&lt;/li&gt;
-&lt;li&gt;oranges&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; This is the first level of quoting.
-&amp;gt;
-&amp;gt; &amp;gt; This is nested blockquote.
-&amp;gt;
-&amp;gt; Back to the first level.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is the first level of quoting.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is nested blockquote.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Back to the first level.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a name=&#34;linking&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;linking:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Linking&lt;/h2&gt;
-
-&lt;p&gt;Useful for saving your links in a section of the markdown as references&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;I get 10 times more traffic from [Google] [1] than from
-[Yahoo] [2] or (implicit link)-&amp;gt; [MSN] [].
-  `[1]: http://google.com/        &amp;quot;Google&amp;quot;`
-  `[2]: http://search.yahoo.com/  &amp;quot;Yahoo Search&amp;quot;`
-  `[MSN]: http://search.msn.com/    &amp;quot;MSN Search&amp;quot;`
-
-&amp;lt;http://example.com/&amp;gt;
-&amp;lt;address@example.com&amp;gt;
-Can also link to parts of page using a link tag
-[link to header](#headerId)
-
-### Some Header
-&amp;lt;a name=&amp;quot;headerId&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I get 10 times more traffic from &lt;a href=&#34;http://google.com/&#34; title=&#34;Google&#34;&gt;Google&lt;/a&gt; than from
-&lt;a href=&#34;http://search.yahoo.com/&#34; title=&#34;Yahoo Search&#34;&gt;Yahoo&lt;/a&gt; or (implicit link)-&amp;gt; &lt;a href=&#34;http://search.msn.com/&#34; title=&#34;MSN Search&#34;&gt;MSN&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://example.com/&#34;&gt;http://example.com/&lt;/a&gt;
-&lt;a href=&#34;mailto:address@example.com&#34;&gt;address@example.com&lt;/a&gt;
-Can also link to parts of page using a link tag
-&lt;a href=&#34;#headerId&#34;&gt;link to header&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;headerId&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;some-header:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Some Header&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a name=&#34;images&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;images:3f2ad45f54944fc8ae828260292c7d26&#34;&gt;Images&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;![Alt text][imageId]
-
-`[imageId]: /images/sample.png  &amp;quot;Image attribute&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://pgruenbacher.github.io/images/sample.png&#34; alt=&#34;Alt text&#34; title=&#34;Image attribute&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     

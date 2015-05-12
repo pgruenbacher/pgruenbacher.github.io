@@ -6,8 +6,117 @@
     <description>Recent content in Blogs on Modicum</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2015 20:53:46 -0400</lastBuildDate>
     <atom:link href="http://pgruenbacher.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>linux_tips</title>
+      <link>http://pgruenbacher.github.io/blog/linux_tips/</link>
+      <pubDate>Mon, 11 May 2015 20:53:46 -0400</pubDate>
+      
+      <guid>http://pgruenbacher.github.io/blog/linux_tips/</guid>
+      <description>
+
+&lt;h3 id=&#34;filters:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;Filters&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;tail +20 &amp;lt; hotel.txt | head -n30 &amp;gt;hlist&lt;/strong&gt; takes lines 20 and is filtered  by head to 30 from hotel.txt and ouputs to hlist file.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;sort &amp;lt; sname | uniq &amp;gt; u_sname&lt;/strong&gt; sorts the lines of sname file, and is filtered by uniq command.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;relational-operators:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;Relational Operators&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;10 -eq 10&lt;/strong&gt;: a is &lt;strong&gt;equal&lt;/strong&gt; to b&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10 -ne 20&lt;/strong&gt;: a is &lt;strong&gt;not equal&lt;/strong&gt; to b&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10 -gt 20&lt;/strong&gt;: a is not &lt;strong&gt;greater&lt;/strong&gt; than b&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10 -lt 20&lt;/strong&gt;: a is &lt;strong&gt;less&lt;/strong&gt; than b&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10 -ge 20&lt;/strong&gt;: a is not &lt;strong&gt;greater or equal&lt;/strong&gt; to b&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10 -le 20&lt;/strong&gt;: a is &lt;strong&gt;less or equal&lt;/strong&gt; to b&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;for-loops:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;For Loops&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;for ((  i = 0 ;  i &amp;lt;= 5;  i++  ))
+
+for (( expr1; expr2; expr3 ))
+do
+   ### each expression will be evaluated ###  
+Done
+
+for (( i = 1; i &amp;lt;= 5; i++ ))      ### Outer for loop ###
+do
+    for (( j = 1 ; j &amp;lt;= 5; j++ )) ### Inner for loop ###
+    do
+          echo -n &amp;quot;$i &amp;quot;
+    done
+  echo &amp;quot;&amp;quot; #### print the new line ###
+done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;brace-expansion:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;Brace Expansion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;{a,b}$PATH  # is a$PATH b$PATH
+_{I,want,my,money,back} # is _I _want _my _money _back
+
+$ echo {5..12} # brace expansion
+5 6 7 8 9 10 11 12
+$ echo {5..k} # cannot mix types
+{5..k}
+$ echo {01..10} # zeropad, range is zeropadded as well
+01 02 03 04 05 06 07 08 09 10
+$ echo {{A..C},{a..c}} #also follows alphater 
+A B C a b c
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;redirection:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;Redirection&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Standard File&lt;/th&gt;
+&lt;th&gt;Descriptor Number&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;stdin&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;stdout&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;stderr&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;pre&gt;&lt;code&gt;$ rm bad_file_name111 &amp;gt; err.txt #prints the error on screen
+$ rm bad_file_name111 2&amp;gt;err.txt #redirects stderr output to the err.txt
+
+#edit ./demoscr
+echo &amp;quot;Error&amp;quot; 1&amp;gt;&amp;amp;2 #prints message as stderr
+cd nonexistent 2&amp;gt;&amp;amp;1 #redirects stderr of command to stdout
+1&amp;gt;filename # Redirect stdout to file &amp;quot;filename.&amp;quot;
+1&amp;gt;&amp;gt;filename # Redirect and append stdout to file &amp;quot;filename.&amp;quot;
+2&amp;gt;filename # Redirect stderr to file &amp;quot;filename.&amp;quot;
+2&amp;gt;&amp;gt;filename # Redirect and append stderr to file &amp;quot;filename.&amp;quot;
+&amp;amp;&amp;gt;filename # Redirect both stdout and stderr to file &amp;quot;filename.&amp;quot;
+
+$ ./demoscr &amp;gt; er1   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;references:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;References&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.tldp.org/LDP/abs/html/io-redirection.html&#34;&gt;tlp&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Links to Stuff I Like</title>
@@ -19,6 +128,13 @@
 &lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript&#34; title=&#34;mozilla&#34;&gt;a re-introduction to javascript&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://kevinlondon.com/2015/05/05/code-review-best-practices.html&#34; title=&#34;kevin london&#34;&gt;code review&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.siftscience.com/blog/2015/best-practices-for-building-large-react-applications&#34; title=&#34;Alex Lopatin&#34;&gt;react best practices&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.golang.org/pipelines&#34; title=&#34;Golang&#34;&gt;golang pipelines&lt;/a&gt;
+Git&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://maryrosecook.com/blog/post/git-in-six-hundred-words&#34; title=&#34;mary rose cook&#34;&gt;git in 600 words&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://tom.preston-werner.com/2009/05/19/the-git-parable.html&#34; title=&#34;tom presten werner&#34;&gt;the git parable&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -399,6 +515,24 @@ Can also link to parts of page using a link tag
 
 &lt;p&gt;&lt;img src=&#34;http://pgruenbacher.github.io/images/sample.png&#34; alt=&#34;Alt text&#34; title=&#34;Image attribute&#34; /&gt;
 &lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://pgruenbacher.github.io/blog/centOS_configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://pgruenbacher.github.io/blog/centOS_configuration/</guid>
+      <description>
+
+&lt;h3 id=&#34;run-a-terminal-shortcut:eff9c853dfef7b578b52585edd5f37d6&#34;&gt;Run a terminal shortcut&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go to System -&amp;gt; Preferences -&amp;gt; Keyboard Shortcuts&lt;/li&gt;
+&lt;li&gt;Double click run a terminal action&lt;/li&gt;
+&lt;li&gt;set to &lt;control&gt;&lt;alt&gt;t&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
