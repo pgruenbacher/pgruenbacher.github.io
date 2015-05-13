@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sed on Modicum</title>
+    <link>http://pgruenbacher.github.io/tags/sed/</link>
+    <description>Recent content in Sed on Modicum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 May 2015 10:06:44 -0400</lastBuildDate>
+    <atom:link href="http://pgruenbacher.github.io/tags/sed/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>sed_references</title>
+      <link>http://pgruenbacher.github.io/blog/sed_references/</link>
+      <pubDate>Tue, 12 May 2015 10:06:44 -0400</pubDate>
+      
+      <guid>http://pgruenbacher.github.io/blog/sed_references/</guid>
+      <description>&lt;p&gt;Sed stream editing command and awk command deserves their own reference post.
+This is mainly a reference to the &lt;a href=&#34;http://www.grymoire.com/Unix/Sed.html#uh-0&#34;&gt;grymoire&lt;/a&gt; article.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sed &#39;s/\/usr\/local\/bin/\/common\/bin/&#39; &amp;lt;old &amp;gt;new #Ugly
+sed &#39;s_/usr/local/bin_/common/bin_&#39; &amp;lt;old &amp;gt;new #Pretty underscore delimiters
+sed &#39;s:/usr/local/bin:/common/bin:&#39; &amp;lt;old &amp;gt;new #Pretty colon delimiters
+sed &#39;s/[a-zA-Z]* /REPLACED /2&#39; &amp;lt;old &amp;gt;new # only the second pattern occurrence
+sed &#39;s/[a-zA-Z]* /REPLACED /2g&#39; &amp;lt;old &amp;gt;new # replace all starting at second pattern
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

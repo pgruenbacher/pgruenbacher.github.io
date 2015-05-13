@@ -6,8 +6,41 @@
     <description>Recent content in Development on Modicum</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 May 2015 20:53:46 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2015 10:01:28 -0400</lastBuildDate>
     <atom:link href="http://pgruenbacher.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>vim_tips</title>
+      <link>http://pgruenbacher.github.io/blog/vim_tips/</link>
+      <pubDate>Wed, 13 May 2015 10:01:28 -0400</pubDate>
+      
+      <guid>http://pgruenbacher.github.io/blog/vim_tips/</guid>
+      <description>&lt;p&gt;Find a space pattern and insert a newline,
+useful for path variable expansion&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/\_s
+:s//\r&amp;amp;/g
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>sed_references</title>
+      <link>http://pgruenbacher.github.io/blog/sed_references/</link>
+      <pubDate>Tue, 12 May 2015 10:06:44 -0400</pubDate>
+      
+      <guid>http://pgruenbacher.github.io/blog/sed_references/</guid>
+      <description>&lt;p&gt;Sed stream editing command and awk command deserves their own reference post.
+This is mainly a reference to the &lt;a href=&#34;http://www.grymoire.com/Unix/Sed.html#uh-0&#34;&gt;grymoire&lt;/a&gt; article.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sed &#39;s/\/usr\/local\/bin/\/common\/bin/&#39; &amp;lt;old &amp;gt;new #Ugly
+sed &#39;s_/usr/local/bin_/common/bin_&#39; &amp;lt;old &amp;gt;new #Pretty underscore delimiters
+sed &#39;s:/usr/local/bin:/common/bin:&#39; &amp;lt;old &amp;gt;new #Pretty colon delimiters
+sed &#39;s/[a-zA-Z]* /REPLACED /2&#39; &amp;lt;old &amp;gt;new # only the second pattern occurrence
+sed &#39;s/[a-zA-Z]* /REPLACED /2g&#39; &amp;lt;old &amp;gt;new # replace all starting at second pattern
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>linux_tips</title>
@@ -17,12 +50,16 @@
       <guid>http://pgruenbacher.github.io/blog/linux_tips/</guid>
       <description>
 
+&lt;p&gt;For learning how to make bash shell scripts for linux. Recommend going through this &lt;a href=&#34;http://www.freeos.com/guides/lsst/&#34;&gt;tutorial&lt;/a&gt; list first&lt;/p&gt;
+
 &lt;h3 id=&#34;filters:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;Filters&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;tail +20 &amp;lt; hotel.txt | head -n30 &amp;gt;hlist&lt;/strong&gt; takes lines 20 and is filtered  by head to 30 from hotel.txt and ouputs to hlist file.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;sort &amp;lt; sname | uniq &amp;gt; u_sname&lt;/strong&gt; sorts the lines of sname file, and is filtered by uniq command.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&#34;search-and-replace:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;Search and Replace&lt;/h3&gt;
 
 &lt;h3 id=&#34;relational-operators:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;Relational Operators&lt;/h3&gt;
 
@@ -33,6 +70,12 @@
 &lt;li&gt;&lt;strong&gt;10 -lt 20&lt;/strong&gt;: a is &lt;strong&gt;less&lt;/strong&gt; than b&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;10 -ge 20&lt;/strong&gt;: a is not &lt;strong&gt;greater or equal&lt;/strong&gt; to b&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;10 -le 20&lt;/strong&gt;: a is &lt;strong&gt;less or equal&lt;/strong&gt; to b&lt;/li&gt;
+&lt;li&gt;[ -e filepath ] Returns true if file exists.&lt;/li&gt;
+&lt;li&gt;[ -x filepath ] Returns true if file exists and executable.&lt;/li&gt;
+&lt;li&gt;[ -S filepath ] Returns true if file exists and its a socket file.&lt;/li&gt;
+&lt;li&gt;[ expr1 -a expr2 ] Returns true if both the expression is true.&lt;/li&gt;
+&lt;li&gt;[ expr1 -o expr2 ] Returns true if either of the expression1 or 2 is true.&lt;/li&gt;
+&lt;li&gt;[ -z filepath] Returns true if path is null&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;for-loops:9b6aab0ac9684b90711607abb7cd4f30&#34;&gt;For Loops&lt;/h3&gt;

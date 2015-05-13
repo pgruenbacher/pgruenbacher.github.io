@@ -73,6 +73,8 @@
         
           <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
         
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/vim_tips/">vim_tips</a></li>
+        
       </ul>
     </nav>
 
@@ -93,6 +95,80 @@
                 <header class="post-header">
                     
                     <h1 class="post-title">
+                      <a href="/blog/vim_tips/">vim_tips</a>
+                  </h1>
+              </header>
+              <p class="post-meta">
+                  
+                  <span class="post-date">
+                    <span class="post-date-day"><sup>13</sup></span><span class="post-date-separator">/</span><span class="post-date-month">May</span> <span class="post-date-year">2015</span>
+                </span>
+                
+                
+                    
+                
+                
+                    <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>1 min. read</em></span>
+                
+                
+                <div class="post-categories">
+                    
+                    <a class="post-category post-category-development" href="http://pgruenbacher.github.io//categories/development">Development</a>
+                    
+                    <a class="post-category post-category-golang" href="http://pgruenbacher.github.io//categories/golang">GoLang</a>
+                    
+                </div>
+                
+            </p>
+            <article class="post-summary">
+                  Find a space pattern and insert a newline, useful for path variable expansion /\_s :s//\r&amp;/g
+              </article>
+              <div class="read-more-link">
+                  <a href="/blog/vim_tips/"><span class="read-more-slashes">//</span>Read More...</a>
+              </div>
+          </section>
+          
+            <section  class="post">
+                <header class="post-header">
+                    
+                    <h1 class="post-title">
+                      <a href="/blog/sed_references/">sed_references</a>
+                  </h1>
+              </header>
+              <p class="post-meta">
+                  
+                  <span class="post-date">
+                    <span class="post-date-day"><sup>12</sup></span><span class="post-date-separator">/</span><span class="post-date-month">May</span> <span class="post-date-year">2015</span>
+                </span>
+                
+                
+                    
+                
+                
+                    <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>1 min. read</em></span>
+                
+                
+                <div class="post-categories">
+                    
+                    <a class="post-category post-category-development" href="http://pgruenbacher.github.io//categories/development">Development</a>
+                    
+                    <a class="post-category post-category-linux" href="http://pgruenbacher.github.io//categories/linux">Linux</a>
+                    
+                </div>
+                
+            </p>
+            <article class="post-summary">
+                  Sed stream editing command and awk command deserves their own reference post. This is mainly a reference to the grymoire article. sed 's/\/usr\/local\/bin/\/common\/bin/' &lt;old &gt;new #Ugly sed 's_/usr/local/bin_/common/bin_' &lt;old &gt;new #Pretty underscore delimiters sed 's:/usr/local/bin:/common/bin:' &lt;old &gt;new #Pretty colon delimiters sed 's/[a-zA-Z]* /REPLACED /2' &lt;old &gt;new # only the second pattern occurrence sed 's/[a-zA-Z]* /REPLACED /2g' &lt;old &gt;new # replace all starting at second pattern
+              </article>
+              <div class="read-more-link">
+                  <a href="/blog/sed_references/"><span class="read-more-slashes">//</span>Read More...</a>
+              </div>
+          </section>
+          
+            <section  class="post">
+                <header class="post-header">
+                    
+                    <h1 class="post-title">
                       <a href="/blog/linux_tips/">linux_tips</a>
                   </h1>
               </header>
@@ -106,7 +182,7 @@
                     
                 
                 
-                    <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>2 min. read</em></span>
+                    <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>3 min. read</em></span>
                 
                 
                 <div class="post-categories">
@@ -119,7 +195,7 @@
                 
             </p>
             <article class="post-summary">
-                  Filters tail +20 &lt; hotel.txt | head -n30 &gt;hlist takes lines 20 and is filtered by head to 30 from hotel.txt and ouputs to hlist file. sort &lt; sname | uniq &gt; u_sname sorts the lines of sname file, and is filtered by uniq command. Relational Operators 10 -eq 10: a is equal to b 10 -ne 20: a is not equal to b 10 -gt 20: a is not
+                  For learning how to make bash shell scripts for linux. Recommend going through this tutorial list first Filters tail +20 &lt; hotel.txt | head -n30 &gt;hlist takes lines 20 and is filtered by head to 30 from hotel.txt and ouputs to hlist file. sort &lt; sname | uniq &gt; u_sname sorts the lines of sname file, and is filtered by uniq command. Search and Replace Relational Operators 10 -eq 10: a is equal to b 10 -ne 20: a is not equal to b 10 -gt 20: a is not greater than b 10 -lt 20: a is less than b 10 -ge 20: a is not greater or equal to b 10 -le 20: a is less or equal to b [ -e filepath ] Returns true if file exists.
               </article>
               <div class="read-more-link">
                   <a href="/blog/linux_tips/"><span class="read-more-slashes">//</span>Read More...</a>

@@ -75,6 +75,8 @@
         
           <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
         
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/vim_tips/">vim_tips</a></li>
+        
       </ul>
     </nav>
 
@@ -101,6 +103,7 @@
 <li>
 <ul>
 <li><a href="#filters:9b6aab0ac9684b90711607abb7cd4f30">Filters</a></li>
+<li><a href="#search-and-replace:9b6aab0ac9684b90711607abb7cd4f30">Search and Replace</a></li>
 <li><a href="#relational-operators:9b6aab0ac9684b90711607abb7cd4f30">Relational Operators</a></li>
 <li><a href="#for-loops:9b6aab0ac9684b90711607abb7cd4f30">For Loops</a></li>
 <li><a href="#brace-expansion:9b6aab0ac9684b90711607abb7cd4f30">Brace Expansion</a></li>
@@ -146,12 +149,16 @@
 
             
 
+<p>For learning how to make bash shell scripts for linux. Recommend going through this <a href="http://www.freeos.com/guides/lsst/">tutorial</a> list first</p>
+
 <h3 id="filters:9b6aab0ac9684b90711607abb7cd4f30">Filters</h3>
 
 <ul>
 <li><strong>tail +20 &lt; hotel.txt | head -n30 &gt;hlist</strong> takes lines 20 and is filtered  by head to 30 from hotel.txt and ouputs to hlist file.</li>
 <li><strong>sort &lt; sname | uniq &gt; u_sname</strong> sorts the lines of sname file, and is filtered by uniq command.</li>
 </ul>
+
+<h3 id="search-and-replace:9b6aab0ac9684b90711607abb7cd4f30">Search and Replace</h3>
 
 <h3 id="relational-operators:9b6aab0ac9684b90711607abb7cd4f30">Relational Operators</h3>
 
@@ -162,6 +169,12 @@
 <li><strong>10 -lt 20</strong>: a is <strong>less</strong> than b</li>
 <li><strong>10 -ge 20</strong>: a is not <strong>greater or equal</strong> to b</li>
 <li><strong>10 -le 20</strong>: a is <strong>less or equal</strong> to b</li>
+<li>[ -e filepath ] Returns true if file exists.</li>
+<li>[ -x filepath ] Returns true if file exists and executable.</li>
+<li>[ -S filepath ] Returns true if file exists and its a socket file.</li>
+<li>[ expr1 -a expr2 ] Returns true if both the expression is true.</li>
+<li>[ expr1 -o expr2 ] Returns true if either of the expression1 or 2 is true.</li>
+<li>[ -z filepath] Returns true if path is null</li>
 </ul>
 
 <h3 id="for-loops:9b6aab0ac9684b90711607abb7cd4f30">For Loops</h3>
@@ -267,6 +280,11 @@ $ ./demoscr &gt; er1
 				<div class="paging">
 					<span class="paging-label">More Reading</span>
 					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/blog/sed_references/">sed_references</a>
+		            </div>
+		            
 
 					
 					<div class="paging-older">

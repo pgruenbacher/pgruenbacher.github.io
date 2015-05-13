@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
   <title>
-    Links to Stuff I Like // Modicum
+    sed_references // Modicum
   </title>
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
@@ -11,15 +11,15 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-<meta name="description" content="A compilation of articles from Hacker News or elsewhere that I find to be informative and useful for best practices">
+<meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
 
-  <meta property="og:title" content="Links to Stuff I Like" />
-<meta property="og:description" content="A compilation of articles from Hacker News or elsewhere that I find to be informative and useful for best practices" />
+  <meta property="og:title" content="sed_references" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="http://pgruenbacher.github.io/blog/links-i-like/" />
+<meta property="og:url" content="http://pgruenbacher.github.io/blog/sed_references/" />
 
 
   
@@ -97,14 +97,14 @@
 	    
   		<section class="post">
             <h1 class="post-title">
-              <a href="/blog/links-i-like/">Links to Stuff I Like</a>
+              <a href="/blog/sed_references/">sed_references</a>
             </h1>
             <h3 class="post-subtitle">
             	
             </h3>
             
             	<span class="post-date">
-                	<span class="post-date-day"><sup>10</sup></span><span class="post-date-separator">/</span><span class="post-date-month">May</span> <span class="post-date-year">2015</span>
+                	<span class="post-date-day"><sup>12</sup></span><span class="post-date-separator">/</span><span class="post-date-month">May</span> <span class="post-date-year">2015</span>
             	</span>
             	
             
@@ -115,7 +115,9 @@
 			
 				<div class="post-categories">
 				
-					<a class="post-category post-category-references" href="http://pgruenbacher.github.io//categories/references">References</a>
+					<a class="post-category post-category-development" href="http://pgruenbacher.github.io//categories/development">Development</a>
+				
+					<a class="post-category post-category-linux" href="http://pgruenbacher.github.io//categories/linux">Linux</a>
 				
 				</div>
 			
@@ -124,22 +126,30 @@
 
 			
 
-            <ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" title="mozilla">a re-introduction to javascript</a></li>
-<li><a href="http://kevinlondon.com/2015/05/05/code-review-best-practices.html" title="kevin london">code review</a></li>
-<li><a href="http://blog.siftscience.com/blog/2015/best-practices-for-building-large-react-applications" title="Alex Lopatin">react best practices</a></li>
+            <p>Sed stream editing command and awk command deserves their own reference post.
+This is mainly a reference to the <a href="http://www.grymoire.com/Unix/Sed.html#uh-0">grymoire</a> article.</p>
 
-<li><p><a href="https://blog.golang.org/pipelines" title="Golang">golang pipelines</a>
-Git</p></li>
-
-<li><p><a href="http://maryrosecook.com/blog/post/git-in-six-hundred-words" title="mary rose cook">git in 600 words</a></p></li>
-
-<li><p><a href="http://tom.preston-werner.com/2009/05/19/the-git-parable.html" title="tom presten werner">the git parable</a></p></li>
-</ul>
+<pre><code>sed 's/\/usr\/local\/bin/\/common\/bin/' &lt;old &gt;new #Ugly
+sed 's_/usr/local/bin_/common/bin_' &lt;old &gt;new #Pretty underscore delimiters
+sed 's:/usr/local/bin:/common/bin:' &lt;old &gt;new #Pretty colon delimiters
+sed 's/[a-zA-Z]* /REPLACED /2' &lt;old &gt;new # only the second pattern occurrence
+sed 's/[a-zA-Z]* /REPLACED /2g' &lt;old &gt;new # replace all starting at second pattern
+</code></pre>
 
 	
 			
 
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-development" href="http://pgruenbacher.github.io//tags/development">Development</a>,
+	                
+	                <a class="post-tag post-tag-sed" href="http://pgruenbacher.github.io//tags/sed">Sed</a>,
+	                
+	                <a class="post-tag post-tag-linux" href="http://pgruenbacher.github.io//tags/linux">Linux</a>,
+	                
+				</div>
 			
 
 			
@@ -148,14 +158,14 @@ Git</p></li>
 					
 					<div class="paging-newer">
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="/blog/linux_tips/">linux_tips</a>
+						<a class="paging-link" href="/blog/vim_tips/">vim_tips</a>
 		            </div>
 		            
 
 					
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="/blog/markdown-references/">My Markdown References</a>
+			            <a class="paging-link" href="/blog/linux_tips/">linux_tips</a>
 		            </div>
 		            
 	            </div>
