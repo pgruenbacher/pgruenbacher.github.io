@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.Zshrc on Modicum</title>
+    <link>http://pgruenbacher.github.io/tags/index.zshrc/</link>
+    <description>Recent content in .Zshrc on Modicum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jun 2015 21:22:12 -0400</lastBuildDate>
+    <atom:link href="http://pgruenbacher.github.io/tags/.zshrc/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>zshell</title>
+      <link>http://pgruenbacher.github.io/content/blog/zshell/</link>
+      <pubDate>Mon, 08 Jun 2015 21:22:12 -0400</pubDate>
+      
+      <guid>http://pgruenbacher.github.io/content/blog/zshell/</guid>
+      <description>
+
+&lt;h1 id=&#34;cycling:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Cycling&lt;/h1&gt;
+
+&lt;p&gt;Can cycle through available files, filter by directory
+&lt;image src=&#34;http://pgruenbacher.github.io/images/example1.gif&#34;/&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;common-command-autocompletion:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Common command autocompletion&lt;/h1&gt;
+
+&lt;p&gt;It provides a lot of the same functionality features as bro pages.&lt;/p&gt;
+
+&lt;p&gt;This is based on plugins I had installed to my zshrc.&lt;/p&gt;
+
+&lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/example2.gif&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;The golang plugin&lt;/p&gt;
+
+&lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/example3.gif&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Especially useful is the git autocompletion and help&lt;/p&gt;
+
+&lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/example5.gif&#34;/&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;path-expansin:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Path Expansin&lt;/h1&gt;
+
+&lt;p&gt;Will expand if the path pattern exists. Othewise will expand up until where the pattern no longer matches
+&lt;image src=&#34;http://pgruenbacher.github.io/images/example4.gif&#34;/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

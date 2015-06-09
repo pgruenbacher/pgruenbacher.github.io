@@ -185,8 +185,7 @@ Can also link to parts of page using a link tag
 `[imageId]: /images/sample.png  &amp;quot;Image attribute&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://pgruenbacher.github.io/images/sample.png&#34; alt=&#34;Alt text&#34; title=&#34;Image attribute&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://pgruenbacher.github.io/images/sample.png&#34; alt=&#34;Alt text&#34; title=&#34;Image attribute&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

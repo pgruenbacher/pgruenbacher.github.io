@@ -26,6 +26,8 @@ Git&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://maryrosecook.com/blog/post/git-in-six-hundred-words&#34; title=&#34;mary rose cook&#34;&gt;git in 600 words&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://tom.preston-werner.com/2009/05/19/the-git-parable.html&#34; title=&#34;tom presten werner&#34;&gt;the git parable&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.liberiangeek.net/2012/04/how-to-install-previous-versions-of-firefox-in-ubuntu-12-04-precise-pangolin/&#34;&gt;how to do old firefox versions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -206,8 +208,7 @@ Can also link to parts of page using a link tag
 `[imageId]: /images/sample.png  &amp;quot;Image attribute&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://pgruenbacher.github.io/images/sample.png&#34; alt=&#34;Alt text&#34; title=&#34;Image attribute&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://pgruenbacher.github.io/images/sample.png&#34; alt=&#34;Alt text&#34; title=&#34;Image attribute&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
