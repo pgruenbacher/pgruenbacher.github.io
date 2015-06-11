@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
   <title>
-    zshell // Modicum
+    Oh My Zsh // Modicum
   </title>
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
@@ -15,7 +15,7 @@
 <meta name="keywords" content="">
 <meta name="author" content="">
 
-  <meta property="og:title" content="zshell" />
+  <meta property="og:title" content="Oh My Zsh" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
@@ -51,6 +51,12 @@
   <script>hljs.initHighlightingOnLoad();</script>
 
 
+
+  
+  <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/4.11/video.js"></script>
+  
+
   
 
   
@@ -75,9 +81,9 @@
         
           <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/vim_tips/">vim_tips</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/content/blog/zshell/">Oh My Zsh</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/content/blog/zshell/">zshell</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/vim_tips/">vim_tips</a></li>
         
       </ul>
     </nav>
@@ -100,9 +106,15 @@
 				<small class="toc-label">Contents</small>
 		   	 	<nav id="TableOfContents">
 <ul>
+<li><a href="#intro:ca21ab28e20662996faa7cf15985f95c">Intro</a></li>
 <li><a href="#cycling:ca21ab28e20662996faa7cf15985f95c">Cycling</a></li>
-<li><a href="#common-command-autocompletion:ca21ab28e20662996faa7cf15985f95c">Common command autocompletion</a></li>
-<li><a href="#path-expansin:ca21ab28e20662996faa7cf15985f95c">Path Expansin</a></li>
+<li><a href="#case-insensitive-autocompletion:ca21ab28e20662996faa7cf15985f95c">Case-insensitive autocompletion</a></li>
+<li><a href="#command-context-autocompletion:ca21ab28e20662996faa7cf15985f95c">Command context autocompletion</a></li>
+<li><a href="#path-expansion:ca21ab28e20662996faa7cf15985f95c">Path Expansion</a></li>
+<li><a href="#greater-prompt-customization:ca21ab28e20662996faa7cf15985f95c">Greater Prompt Customization</a></li>
+<li><a href="#oh-my-glob:ca21ab28e20662996faa7cf15985f95c">Oh My Glob</a></li>
+<li><a href="#global-alias:ca21ab28e20662996faa7cf15985f95c">Global Alias</a></li>
+<li><a href="#oh-my-zsh:ca21ab28e20662996faa7cf15985f95c">Oh My Zsh</a></li>
 </ul>
 </nav>
 		    </div>
@@ -110,7 +122,7 @@
 	    
   		<section class="post">
             <h1 class="post-title">
-              <a href="/content/blog/zshell/">zshell</a>
+              <a href="/content/blog/zshell/">Oh My Zsh</a>
             </h1>
             <h3 class="post-subtitle">
             	
@@ -139,31 +151,105 @@
 
             
 
+<h1 id="intro:ca21ab28e20662996faa7cf15985f95c">Intro</h1>
+
+<p>Best intro is through the <a href="http://zsh.sourceforge.net/Intro/intro_1.html">sourcefourge</a> intro.</p>
+
 <h1 id="cycling:ca21ab28e20662996faa7cf15985f95c">Cycling</h1>
 
 <p>Can cycle through available files, filter by directory
 <image src="/images/example1.gif"/></p>
 
-<h1 id="common-command-autocompletion:ca21ab28e20662996faa7cf15985f95c">Common command autocompletion</h1>
+<h1 id="case-insensitive-autocompletion:ca21ab28e20662996faa7cf15985f95c">Case-insensitive autocompletion</h1>
+
+<p><image src="/images/exampleCaseInsensitive.gif"/></p>
+
+<h1 id="command-context-autocompletion:ca21ab28e20662996faa7cf15985f95c">Command context autocompletion</h1>
 
 <p>It provides a lot of the same functionality features as bro pages.</p>
 
-<p>This is based on plugins I had installed to my zshrc.</p>
+<p>common builtin functions like tar have docs builtin to zsh.</p>
 
 <p><image src="/images/example2.gif"/></p>
 
-<p>The golang plugin</p>
+<p>Especially useful is the git autocompletion and help</p>
 
 <p><image src="/images/example3.gif"/></p>
 
-<p>Especially useful is the git autocompletion and help</p>
+<p>The golang plugin.
+This is based on plugins I had installed to my zshrc.</p>
 
 <p><image src="/images/example5.gif"/></p>
 
-<h1 id="path-expansin:ca21ab28e20662996faa7cf15985f95c">Path Expansin</h1>
+<h1 id="path-expansion:ca21ab28e20662996faa7cf15985f95c">Path Expansion</h1>
 
 <p>Will expand if the path pattern exists. Othewise will expand up until where the pattern no longer matches
 <image src="/images/example4.gif"/></p>
+
+<h1 id="greater-prompt-customization:ca21ab28e20662996faa7cf15985f95c">Greater Prompt Customization</h1>
+
+<p>Allows for right-justified prompts, useful for more subtle information that can be tucked away to the right side for quick reference.
+Here is my custom theme that I&rsquo;ve adopted: <a href="https://github.com/pgruenbacher/zshrc_custom/blob/master/themes/my_custom.zsh-theme">my_custom.zsh-theme</a></p>
+
+<p>In this theme I intend to expand to two lines of information with information such as X11 forwarding status, full path, and local time. Currently it will display the current git repository and will also display user@host during ssh sessions. Will also turn red if a command did not work.
+<image src="/images/exampleSSH.gif"/></p>
+
+<h1 id="oh-my-glob:ca21ab28e20662996faa7cf15985f95c">Oh My Glob</h1>
+
+<p>Recursive search of subdirectories</p>
+
+<p><image src="/images/exampleRecursive.gif"/></p>
+
+<p>The following table by <a href="http://frendrich.se">http://frendrich.se</a></p>
+
+<p><code><pre class="zsh">
+    ls <em>(.)            # list just regular files
+    ls *(/)            # list just directories
+    ls -ld *(/om[1,3]) # Show three newest directories. &ldquo;om&rdquo; orders by modification. &ldquo;[1,3]&rdquo; works like Python slice.
+    rm -i *(.L0)       # Remove zero length files, prompt for each file
+    ls *(^m0)          # Files not modified today.
+    emacs **/main.py   # Edit main.py, wherever it is in this directory tree. ** is great.
+    ls **/</em>(.x)        # List all executable files in this tree
+    ls <em>~</em>.*(.)        # List all files that does not have a dot in the filename
+    ls -l */**(Lk+100) # List all files larger than 100kb in this tree
+    ls DATA_<a href="#c4,7">0-9</a>.csv # List DATA_nnnn.csv to DATA_nnnnnnn.csv
+</pre></code></p>
+
+<h1 id="global-alias:ca21ab28e20662996faa7cf15985f95c">Global Alias</h1>
+
+<p>You can have a global alias be used anywhere in the command line in succession to other commands.</p>
+
+<p><code><pre class="zsh">
+    alias -g remote=pgbacher@183.134.3.51
+    ssh remote
+    alias -g friends=&lsquo;| fgrep -f ~/.friends&rsquo;
+    w friends
+</pre></code></p>
+
+<h1 id="oh-my-zsh:ca21ab28e20662996faa7cf15985f95c">Oh My Zsh</h1>
+
+<p>There is great support from the community.</p>
+
+<p>here is my custom themes and plugins that are managed by oh-my-zsh:
+<a href="https://github.com/pgruenbacher/zshrc_custom">pgruenbacher/zshrc_custom</a></p>
+
+<!-- <video 
+    id="really-cool-video" 
+    class="video-js vjs-default-skin vjs-big-play-centered" 
+    controls
+    autoplay
+    loop
+     preload="auto" 
+     width="640" height="264" 
+     poster="{{ .Site.BaseURL }}images/2013Nascar-RotGallery_0.jpg"
+     data-setup='{}'>
+      <source src="{{ .Site.BaseURL }}vids/example2.mp4" type='video/mp4'>
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a web browser
+        that 
+        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+      </p>
+  </video> -->
 
 	
 			

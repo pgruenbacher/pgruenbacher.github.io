@@ -10,38 +10,112 @@
     <atom:link href="http://pgruenbacher.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>zshell</title>
+      <title>Oh My Zsh</title>
       <link>http://pgruenbacher.github.io/content/blog/zshell/</link>
       <pubDate>Mon, 08 Jun 2015 21:22:12 -0400</pubDate>
       
       <guid>http://pgruenbacher.github.io/content/blog/zshell/</guid>
       <description>
 
+&lt;h1 id=&#34;intro:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Intro&lt;/h1&gt;
+
+&lt;p&gt;Best intro is through the &lt;a href=&#34;http://zsh.sourceforge.net/Intro/intro_1.html&#34;&gt;sourcefourge&lt;/a&gt; intro.&lt;/p&gt;
+
 &lt;h1 id=&#34;cycling:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Cycling&lt;/h1&gt;
 
 &lt;p&gt;Can cycle through available files, filter by directory
 &lt;image src=&#34;http://pgruenbacher.github.io/images/example1.gif&#34;/&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;common-command-autocompletion:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Common command autocompletion&lt;/h1&gt;
+&lt;h1 id=&#34;case-insensitive-autocompletion:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Case-insensitive autocompletion&lt;/h1&gt;
+
+&lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/exampleCaseInsensitive.gif&#34;/&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;command-context-autocompletion:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Command context autocompletion&lt;/h1&gt;
 
 &lt;p&gt;It provides a lot of the same functionality features as bro pages.&lt;/p&gt;
 
-&lt;p&gt;This is based on plugins I had installed to my zshrc.&lt;/p&gt;
+&lt;p&gt;common builtin functions like tar have docs builtin to zsh.&lt;/p&gt;
 
 &lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/example2.gif&#34;/&gt;&lt;/p&gt;
 
-&lt;p&gt;The golang plugin&lt;/p&gt;
+&lt;p&gt;Especially useful is the git autocompletion and help&lt;/p&gt;
 
 &lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/example3.gif&#34;/&gt;&lt;/p&gt;
 
-&lt;p&gt;Especially useful is the git autocompletion and help&lt;/p&gt;
+&lt;p&gt;The golang plugin.
+This is based on plugins I had installed to my zshrc.&lt;/p&gt;
 
 &lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/example5.gif&#34;/&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;path-expansin:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Path Expansin&lt;/h1&gt;
+&lt;h1 id=&#34;path-expansion:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Path Expansion&lt;/h1&gt;
 
 &lt;p&gt;Will expand if the path pattern exists. Othewise will expand up until where the pattern no longer matches
 &lt;image src=&#34;http://pgruenbacher.github.io/images/example4.gif&#34;/&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;greater-prompt-customization:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Greater Prompt Customization&lt;/h1&gt;
+
+&lt;p&gt;Allows for right-justified prompts, useful for more subtle information that can be tucked away to the right side for quick reference.
+Here is my custom theme that I&amp;rsquo;ve adopted: &lt;a href=&#34;https://github.com/pgruenbacher/zshrc_custom/blob/master/themes/my_custom.zsh-theme&#34;&gt;my_custom.zsh-theme&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In this theme I intend to expand to two lines of information with information such as X11 forwarding status, full path, and local time. Currently it will display the current git repository and will also display user@host during ssh sessions. Will also turn red if a command did not work.
+&lt;image src=&#34;http://pgruenbacher.github.io/images/exampleSSH.gif&#34;/&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;oh-my-glob:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Oh My Glob&lt;/h1&gt;
+
+&lt;p&gt;Recursive search of subdirectories&lt;/p&gt;
+
+&lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/exampleRecursive.gif&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;The following table by &lt;a href=&#34;http://frendrich.se&#34;&gt;http://frendrich.se&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&lt;pre class=&#34;zsh&#34;&gt;
+    ls &lt;em&gt;(.)            # list just regular files
+    ls *(/)            # list just directories
+    ls -ld *(/om[1,3]) # Show three newest directories. &amp;ldquo;om&amp;rdquo; orders by modification. &amp;ldquo;[1,3]&amp;rdquo; works like Python slice.
+    rm -i *(.L0)       # Remove zero length files, prompt for each file
+    ls *(^m0)          # Files not modified today.
+    emacs **/main.py   # Edit main.py, wherever it is in this directory tree. ** is great.
+    ls **/&lt;/em&gt;(.x)        # List all executable files in this tree
+    ls &lt;em&gt;~&lt;/em&gt;.*(.)        # List all files that does not have a dot in the filename
+    ls -l */**(Lk+100) # List all files larger than 100kb in this tree
+    ls DATA_&lt;a href=&#34;#c4,7&#34;&gt;0-9&lt;/a&gt;.csv # List DATA_nnnn.csv to DATA_nnnnnnn.csv
+&lt;/pre&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;global-alias:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Global Alias&lt;/h1&gt;
+
+&lt;p&gt;You can have a global alias be used anywhere in the command line in succession to other commands.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&lt;pre class=&#34;zsh&#34;&gt;
+    alias -g remote=pgbacher@183.134.3.51
+    ssh remote
+    alias -g friends=&amp;lsquo;| fgrep -f ~/.friends&amp;rsquo;
+    w friends
+&lt;/pre&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;oh-my-zsh:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Oh My Zsh&lt;/h1&gt;
+
+&lt;p&gt;There is great support from the community.&lt;/p&gt;
+
+&lt;p&gt;here is my custom themes and plugins that are managed by oh-my-zsh:
+&lt;a href=&#34;https://github.com/pgruenbacher/zshrc_custom&#34;&gt;pgruenbacher/zshrc_custom&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- &lt;video 
+    id=&#34;really-cool-video&#34; 
+    class=&#34;video-js vjs-default-skin vjs-big-play-centered&#34; 
+    controls
+    autoplay
+    loop
+     preload=&#34;auto&#34; 
+     width=&#34;640&#34; height=&#34;264&#34; 
+     poster=&#34;{{ .Site.BaseURL }}images/2013Nascar-RotGallery_0.jpg&#34;
+     data-setup=&#39;{}&#39;&gt;
+      &lt;source src=&#34;{{ .Site.BaseURL }}vids/example2.mp4&#34; type=&#39;video/mp4&#39;&gt;
+      &lt;p class=&#34;vjs-no-js&#34;&gt;
+        To view this video please enable JavaScript, and consider upgrading to a web browser
+        that 
+        &lt;a href=&#34;http://videojs.com/html5-video-support/&#34; target=&#34;_blank&#34;&gt;supports HTML5 video&lt;/a&gt;
+      &lt;/p&gt;
+  &lt;/video&gt; --&gt;
 </description>
     </item>
     
