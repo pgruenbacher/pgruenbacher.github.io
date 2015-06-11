@@ -28,6 +28,8 @@
 
 &lt;h1 id=&#34;case-insensitive-autocompletion:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Case-insensitive autocompletion&lt;/h1&gt;
 
+&lt;p&gt;Tell me now if bash has this option, because I love this feature.&lt;/p&gt;
+
 &lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/exampleCaseInsensitive.gif&#34;/&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;command-context-autocompletion:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Command context autocompletion&lt;/h1&gt;
@@ -49,8 +51,15 @@ This is based on plugins I had installed to my zshrc.&lt;/p&gt;
 
 &lt;h1 id=&#34;path-expansion:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Path Expansion&lt;/h1&gt;
 
-&lt;p&gt;Will expand if the path pattern exists. Othewise will expand up until where the pattern no longer matches
-&lt;image src=&#34;http://pgruenbacher.github.io/images/example4.gif&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;Will expand if the path pattern exists. Othewise will expand up until where the pattern no longer matches&lt;/p&gt;
+
+&lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/example4.gif&#34;/&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;syntax-highlighting:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Syntax Highlighting&lt;/h1&gt;
+
+&lt;p&gt;I turned off a lot of the highlighting so that it&amp;rsquo;s less colorful and crowded, but the highlighting of text, brackets, etc. is very helpful. Unrecognized tokens/commands turn red for error detection.&lt;/p&gt;
+
+&lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/exampleSyntax1.gif&#34;/&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;greater-prompt-customization:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Greater Prompt Customization&lt;/h1&gt;
 
