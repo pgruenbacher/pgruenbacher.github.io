@@ -23,8 +23,9 @@
 
 &lt;h1 id=&#34;cycling:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Cycling&lt;/h1&gt;
 
-&lt;p&gt;Can cycle through available files, filter by directory
-&lt;image src=&#34;http://pgruenbacher.github.io/images/example1.gif&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;Can cycle through available files, filter by directory&lt;/p&gt;
+
+&lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/example1.gif&#34;/&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;case-insensitive-autocompletion:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Case-insensitive autocompletion&lt;/h1&gt;
 
@@ -66,8 +67,9 @@ This is based on plugins I had installed to my zshrc.&lt;/p&gt;
 &lt;p&gt;Allows for right-justified prompts, useful for more subtle information that can be tucked away to the right side for quick reference.
 Here is my custom theme that I&amp;rsquo;ve adopted: &lt;a href=&#34;https://github.com/pgruenbacher/zshrc_custom/blob/master/themes/my_custom.zsh-theme&#34;&gt;my_custom.zsh-theme&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;In this theme I intend to expand to two lines of information with information such as X11 forwarding status, full path, and local time. Currently it will display the current git repository and will also display user@host during ssh sessions. Will also turn red if a command did not work.
-&lt;image src=&#34;http://pgruenbacher.github.io/images/exampleSSH.gif&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;In this theme I intend to expand to two lines of information with information such as X11 forwarding status, full path, and local time. Currently it will display the current git repository and will also display user@host during ssh sessions. Will also turn red if a command did not work.&lt;/p&gt;
+
+&lt;p&gt;&lt;image src=&#34;http://pgruenbacher.github.io/images/exampleSSH.gif&#34;/&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;oh-my-glob:ca21ab28e20662996faa7cf15985f95c&#34;&gt;Oh My Glob&lt;/h1&gt;
 
